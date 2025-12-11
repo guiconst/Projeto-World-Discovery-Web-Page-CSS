@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Seu Mundo 🌍</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Descubra o Seu Mundo 🌍</h1>
+            <p class="subtitle">Explore os continentes e suas maravilhas geográficas</p>
+            
+            <button class="geo-button" id="geoButton">
+                📍 Descobrir Minha Localização
+            </button>
+        </header>
+        
+        <div class="instructions">
+            <h3>Como Usar:</h3>
+            <p>
+                🗺️ Clique em qualquer continente no mapa abaixo para descobrir informações fascinantes sobre seus principais rios, montanhas e pontos de referência!
+                <br><br>
+                📍 Use o botão de geolocalização acima para descobrir automaticamente em qual continente você está localizado.
+            </p>
+        </div>
+        
+        <div class="map-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/1280px-Equirectangular_projection_SW.jpg" 
+                alt="Mapa Múndi Interativo" 
+                usemap="#worldmap"
+                id="worldMap">
+            
+            <map name="worldmap">
+                <area shape="poly" 
+                    coords="140,80, 240,85, 280,120, 290,160, 250,200, 180,210, 140,180, 120,120" 
+                    alt="América do Norte" 
+                    data-continent="america-norte"
+                    title="América do Norte">
+                
+                <area shape="poly" 
+                    coords="260,240, 310,260, 330,320, 310,380, 270,390, 240,360, 235,290, 250,250" 
+                    alt="América do Sul" 
+                    data-continent="america-sul"
+                    title="América do Sul">
+                
+                <area shape="poly" 
+                    coords="500,90, 580,85, 620,110, 610,140, 560,150, 510,130" 
+                    alt="Europa" 
+                    data-continent="europa"
+                    title="Europa">
+                
+                <area shape="poly" 
+                    coords="520,180, 600,170, 650,200, 660,280, 640,340, 580,360, 520,340, 500,260, 510,210" 
+                    alt="África" 
+                    data-continent="africa"
+                    title="África">
+                
+                <area shape="poly" 
+                    coords="630,80, 750,75, 880,90, 950,120, 970,180, 940,220, 850,240, 750,230, 680,200, 640,150" 
+                    alt="Ásia" 
+                    data-continent="asia"
+                    title="Ásia">
+                
+                <area shape="poly" 
+                    coords="850,280, 920,290, 970,310, 980,350, 950,370, 890,365, 850,340" 
+                    alt="Oceania" 
+                    data-continent="oceania"
+                    title="Oceania">
+                
+                <area shape="rect" 
+                    coords="200,420, 1000,480" 
+                    alt="Antártida" 
+                    data-continent="antartida"
+                    title="Antártida">
+            </map>
+        </div>
+        
+        <div class="continent-info" id="continentInfo">
+            <h3 id="continentTitle"></h3>
+            <p id="continentDescription"></p>
+        </div>
+        
+    </div>
+    
+    <script>
+
+    // Área reservada para funcionalidade JavaScript
+    // Este espaço será preenchido pelo desenvolvedor responsável por:
+    // 1. Implementar a funcionalidade de geolocalização no botão #geoButton
+    // 2. Adicionar event listeners para as áreas do mapa (data-continent)
+    // 3. Exibir informações detalhadas sobre cada continente
+    // 4. Animar e mostrar a div #continentInfo com dados dinâmicos
+        
+        console.log('Estrutura HTML pronta para integração JavaScript!');
+    </script>
+</body>
+</html>
